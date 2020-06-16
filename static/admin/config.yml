@@ -8,6 +8,7 @@ backend:
     uploadMedia: '[skip ci] Upload “{{path}}”'
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
@@ -34,9 +35,9 @@ collections:
     filer: {field: "type", value: "primi"}
     fields: # The fields each document in this collection have
       - {label: "Name of Item", name: "title", widget: "string"}
-      - {label: "Supported Meals", name: "categories", widget: "list", select: ["takeaway", "lunch", "dinner"]}
+      - {label: "Supported Meals", name: "categories", widget: "list", options: ["takeaway", "lunch", "dinner"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
-      - {label: "Type of Food", name: "type", widget: "list", select: ["stuzzichini", "antipasti", "primi", "secondi", "pizza", "sides", "contorni"]}
+      - {label: "Type of Food", name: "type", widget: "list", options: ["stuzzichini", "antipasti", "primi", "secondi", "pizza", "sides", "contorni"]}
       - {label: "Price", name: "price", widget: "string"}
 
   - name: "drinks"

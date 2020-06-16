@@ -65,23 +65,24 @@ collections:
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
           
-          - name: food
-            label: "Food Item" # Used in the UI, ie.: "New Post"
-            folder: "site/content/food" # The path to the folder where the documents are stored
-            create: true # Allow users to create new documents in this collection
-            fields: # The fields each document in this collection have
-              - {label: "Name of Item", name: "title", widget: "string"}
-              - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
-              - {label: "Ingredients/Description", name: "description", widget: "text"}
-              - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
-              - {label: "Price", name: "price", widget: "string"}
-          - name: drinks
-            label: "Drink Item" # Used in the UI, ie.: "New Post"
-            folder: "site/content/drinks" # The path to the folder where the documents are stored
-            create: true # Allow users to create new documents in this collection
-            fields: # The fields each document in this collection have
-              - {label: "Name of Drink", name: "title", widget: "string"}
-              - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
-              - {label: "Ingredients/Description", name: "description", widget: "text"}
-              - {label: "Type of Drink", name: "type", widget: "string", default: "beer"}
-              - {label: "Price", name: "price", widget: "string"}
+        - name: food
+          label: "Food Item" # Used in the UI, ie.: "New Post"
+          folder: "src/pages/food" # The path to the folder where the documents are stored
+          create: true # Allow users to create new documents in this collection
+          fields: # The fields each document in this collection have
+            - {label: "Name of Item", name: "title", widget: "string"}
+            - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
+            - {label: "Ingredients/Description", name: "description", widget: "text"}
+            - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
+            - {label: "Price", name: "price", widget: "string"}
+            
+        - name: drinks
+          label: "Drink Item" # Used in the UI, ie.: "New Post"
+          folder: "src/pages/drinks" # The path to the folder where the documents are stored
+          create: true # Allow users to create new documents in this collection
+          fields: # The fields each document in this collection have
+            - {label: "Name of Drink", name: "title", widget: "string"}
+            - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
+            - {label: "Ingredients/Description", name: "description", widget: "text"}
+            - {label: "Type of Drink", name: "type", widget: "string", default: "beer"}
+            - {label: "Price", name: "price", widget: "string"}

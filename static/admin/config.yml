@@ -65,7 +65,7 @@ collections:
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
           
-        - name: food
+        - name: "food"
           label: "Food Item" # Used in the UI, ie.: "New Post"
           folder: "src/pages/food" # The path to the folder where the documents are stored
           create: true # Allow users to create new documents in this collection
@@ -75,8 +75,8 @@ collections:
             - {label: "Ingredients/Description", name: "description", widget: "text"}
             - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
             - {label: "Price", name: "price", widget: "string"}
-            
-        - name: drinks
+
+        - name: "drinks"
           label: "Drink Item" # Used in the UI, ie.: "New Post"
           folder: "src/pages/drinks" # The path to the folder where the documents are stored
           create: true # Allow users to create new documents in this collection

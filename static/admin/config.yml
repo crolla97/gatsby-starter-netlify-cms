@@ -31,11 +31,11 @@ collections:
   - name: "menus"
     label: "Menus"
     files:
-      - file: "src/pages/menus/main.md"
-        label: "Main Menu"
-        name: "main-menu"
+      - file: "src/pages/menus/lunch.md"
+        label: "lunch Menu"
+        name: "lunch-menu"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "main-menu"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lunch-menu"}
           - {label: "Menu", name: "menu", widget: object, fields: [{label: Stuzzichini, name: stuzzichini, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Antipasti, name: antipasti, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}]}
 
   - name: "pages"

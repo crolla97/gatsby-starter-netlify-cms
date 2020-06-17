@@ -1,4 +1,5 @@
 ---
+templateKey: lunch-menu
 menu:
   stuzzichini:
     - title: Test

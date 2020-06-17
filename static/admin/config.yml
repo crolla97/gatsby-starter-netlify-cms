@@ -28,28 +28,32 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "food"
-    label: "Food Item" # Used in the UI, ie.: "New Post"
-    folder: "src/pages/food" # The path to the folder where the documents are stored
+  - name: "mainMenu"
+    label: "Main Menu" # Used in the UI, ie.: "New Post"
+    folder: "src/pages/main-menu" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    filter: {field: "type", value: "primi"}
+    slug: "main-menu"
     fields: # The fields each document in this collection have
-      - {label: "Name of Item", name: "title", widget: "string"}
-      - {label: "Supported Meals", name: "categories", widget: "select", options: ["takeaway", "lunch", "dinner"]}
-      - {label: "Ingredients/Description", name: "description", widget: "text"}
-      - {label: "Type of Food", name: "type", widget: "select", options: ["stuzzichini", "antipasti", "primi", "secondi", "pizza", "sides", "contorni"]}
-      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "main-menu"}
+      - {label: Stuzzichini, name: stuzzichini, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
+      - {label: Antipasti, name: antipasti, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
+      - {label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
+      - {label: Secondi, name: secondi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
+      - {label: Pizza, name: pizza, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
+      - {label: Sides, name: sides, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
+      - {label: Contorni, name: contorni, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}
 
-  - name: "drinks"
-    label: "Drink Item" # Used in the UI, ie.: "New Post"
-    folder: "src/pages/drinks" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Name of Drink", name: "title", widget: "string"}
-      - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
-      - {label: "Ingredients/Description", name: "description", widget: "text"}
-      - {label: "Type of Drink", name: "type", widget: "string", default: "beer"}
-      - {label: "Price", name: "price", widget: "string"}
+    # - name: "food"
+    #   label: "Food Item" # Used in the UI, ie.: "New Post"
+    #   folder: "src/pages/food" # The path to the folder where the documents are stored
+    #   create: true # Allow users to create new documents in this collection
+    #   fields: # The fields each document in this collection have
+    #     - {label: "Template Key", name: "templateKey", widget: "hidden", default: "food-item"}
+    #     - {label: "Name of Item", name: "title", widget: "string"}
+    #     - {label: "Supported Meals", name: "categories", widget: "select", options: ["takeaway", "lunch", "dinner"]}
+    #     - {label: "Ingredients/Description", name: "description", widget: "text"}
+    #     - {label: "Type of Food", name: "type", widget: "select", options: ["stuzzichini", "antipasti", "primi", "secondi", "pizza", "sides", "contorni"]}
+    #     - {label: "Price", name: "price", widget: "string"}
 
   - name: "pages"
     label: "Pages"

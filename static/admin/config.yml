@@ -31,7 +31,7 @@ collections:
   - name: "menus"
     label: "Menus"
     files:
-      - file: "src/pages/main-menu.md"
+      - file: "src/pages/main-menu/main-menu.md"
         label: "Main Menu"
         name: "main-menu"
         fields:

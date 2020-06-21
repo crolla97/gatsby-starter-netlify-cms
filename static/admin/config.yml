@@ -33,9 +33,10 @@ collections:
     files:
       - file: "src/pages/menus/lunch.md"
         label: "Lunch Menu"
-        name: "lunch-menu"
+        name: "lunch"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lunch-menu"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lunch-page"}
+          - {label: Subheading, name: subheading, widget: string}
           - {label: "Menu", name: "menu", widget: object, fields: [{label: Stuzzichini, name: stuzzichini, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Antipasti, name: antipasti, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}]}
 
   - name: "pages"

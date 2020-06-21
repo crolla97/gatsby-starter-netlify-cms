@@ -31,13 +31,13 @@ collections:
   - name: "menus"
     label: "Menus"
     files:
-      - file: "src/pages/menus/lunch.md"
-        label: "Lunch Menu"
-        name: "lunch"
+      - file: "src/pages/menus/takeaway.md"
+        label: "Takeaway Menu"
+        name: "takeaway"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "lunch-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "takeaway-menu"}
           - {label: Subheading, name: subheading, widget: string}
-          - {label: "Menu", name: "menu", widget: object, fields: [{label: Stuzzichini, name: stuzzichini, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Antipasti, name: antipasti, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}]}
+          - {label: "Menu", name: "menu", widget: object, fields: [{label: Stuzzichini, name: stuzzichini, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Antipasti, name: antipasti, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Primi, name: primi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Secondi, name: secondi, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Pizza, name: pizza, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}, {label: Corntorni, name: corntorni, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: Price, name: price, widget: string}]}]}
 
   - name: "pages"
     label: "Pages"
